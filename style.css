@@ -1,0 +1,243 @@
+/* font-family: 'Comfortaa', sans-serif;
+font-family: 'Varela Round', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    min-height: 100%;
+    scroll-behavior: smooth;
+}
+body{
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        ". main main ."
+        "footer footer footer footer";
+    grid-template-rows: 1fr auto 115px;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    background-color: #f6d4d2;
+}
+main{
+    grid-area: main;
+    font-family: 'Comfortaa', sans-serif;
+    color: #222222;
+    min-height: 100vh;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+
+a{
+    text-decoration: none;
+    color: #222222;
+}
+
+h1 {
+    margin-top: 15px;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    color: #252525;
+}
+
+/* HEADER */
+.barraNav{
+    grid-area: header;
+    background-color: #4cdde9;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    margin-bottom: 15px;
+}
+.barraNav__lista{
+    list-style: none;
+    height: 30px;
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.barraNav__lista li{
+    font-family: 'Varela Round', sans-serif;
+    padding: 0.5% 1%;
+}
+.barraNav__lista li.active{
+    background-color: #f6d4d2;
+    padding: 0.5% 3%;
+}
+.barraNav__lista li:hover{
+    background-color: #f6d4d2;
+    padding: 0.5% 6.5%;
+}
+.barraNav__logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+}
+
+/* MAIN INDEX */
+.destacado{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px auto;
+    width: 60vw;
+}
+.destacado__img{
+    width: 50%;
+    height: 100%;
+}
+.destacado__txt.uno{
+    margin-left: 15px;
+}
+.destacado__txt.uno p{
+    margin-top: 15px;
+}
+.destacado__txt.dos{
+    margin-right: 15px;
+    text-align: right;
+}
+.destacado__txt.dos p{
+    margin-top: 15px;
+}
+
+/* MAIN INFO */
+.nosotros{
+    display:flex;
+    width: 60vw;
+    margin-bottom: 15px;
+}
+.nosotros__img{
+    width: 175px;
+    height: 100%;
+    border-radius: 50%;
+}
+.nosotros div{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.nosotros div p{
+    margin-top: 10px;
+}
+#michis{
+    margin-top: -130px;
+    padding-top: 130px;
+}
+.michis__ttl{
+    text-align: center;
+    width: 60vw;
+    margin-top: 15px;
+}
+.michis{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 60vw;
+}
+.michis__img{
+    width: 175px;
+    margin: 10px 15px;
+    border-radius: 50%;
+}
+.michis__card{
+    text-align: center;
+}
+
+/* MAIN SERVICIOS */
+.servicios{
+    display: flex;
+    justify-content: space-evenly;
+    width: 60vw;
+    margin-top: 15px;
+}
+.servicios img{
+    width: 50%;
+    height: 100%;
+}
+.servicios__desc{
+    margin-left: 15px;
+}
+.servicios__desc p{
+    margin-top: 15px;
+}
+
+/* FOOTER */
+.footer{
+    grid-area: footer;
+    width: 100%;
+    background-color: #4cdde9;
+}
+.footer__lista{
+    list-style: none;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    height: 115px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__lista li{
+    padding: 0.15%;
+    
+}
+.footer__logo{
+    height: 25px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 767px){
+    body{
+        grid-template-areas:
+            "header header header header"
+            "main main main main"
+            "footer footer footer footer";
+        grid-template-rows: 1fr auto 75px;
+    }
+    .barraNav__logo{
+        height: 75px;
+    }
+    main{
+        width: 90vw;
+    }
+    /* INDEX */
+    .destacado{
+        flex-direction: column;
+        width: 90vw;
+        margin: 0;
+    }
+    .destacado__img{
+        width: 100%;
+    }
+    .destacado__txt.uno{
+        margin: 10px 0;
+    }
+    .destacado.dos{
+        flex-direction: column-reverse;
+        margin-bottom: 15px;
+    }
+    .destacado__txt.dos{
+        text-align: left;
+        margin: 10px 0;
+    }
+    /* SERVICIOS */
+    .servicios{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+    }
+    .servicios img{
+        width: 100%;
+    }
+    .servicios__desc{
+        margin: 10px 0;
+    }
+    /* FOOTER */
+    .footer__lista{
+        height: 75px;
+        margin-left: 15px;
+    }
+    .footer__logo{
+        height: 15px;
+    }
+}
