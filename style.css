@@ -84,7 +84,7 @@ main a:hover{
     display: flex;
     justify-content: space-evenly;
     margin: 15px auto;
-    width: 60vw;
+    width: 100%;
 }
 .destacado__img{
     width: 50%;
@@ -104,7 +104,7 @@ main a:hover{
 /* MAIN INFO */
 .nosotros{
     display:flex;
-    width: 60vw;
+    width: 100%;
     margin-bottom: 15px;
 }
 .nosotros__img{
@@ -125,14 +125,15 @@ main a:hover{
 }
 .michis__ttl{
     text-align: center;
-    width: 60vw;
+    width: 100%;
     margin-top: 15px;
 }
 .michis{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 60vw;
+    width: 100%;
+    margin: auto;
 }
 .michis__img{
     width: 175px;
@@ -162,22 +163,24 @@ main a:hover{
 }
 
 /* MAIN GALERIA */
-.carrousel__ttl{
+.carrusel__ttl{
     text-align: center;
     margin-top: 15px;
 }
-.carrousel{
+.carrusel{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    overflow-x: scroll;
+    margin: auto;
     width: 60vw;
 }
-.carrousel img{
+.carrusel img{
     width: 250px;
+    margin: 10px;
 }
 
 /* MAIN CONTACTO */
-
 #contacto{
     width: 60vw;
     display: flex;
@@ -209,7 +212,14 @@ main a:hover{
 .form__input{
     display: block;
     margin: 10px auto;
+    width: 75%;
     padding: 5px;
+}
+#radio{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
 }
 .form__radio{
     margin-left: 5px;
@@ -224,7 +234,7 @@ main a:hover{
 }
 .form__btn{
     margin-top: 5px;
-    margin-left: 85%
+    margin-left: 85%;
 }
 /* FOOTER */
 .footer{
@@ -267,8 +277,6 @@ main a:hover{
     /* INDEX */
     .destacado{
         flex-direction: column;
-        width: 90vw;
-        margin: 0;
     }
     .destacado__img{
         width: 100%;
@@ -284,6 +292,19 @@ main a:hover{
         text-align: left;
         margin: 10px 0;
     }
+    /* INFO */
+    .nosotros{
+        display: inline-block;
+    }
+    .nosotros__img{
+        width:125px;
+        float: left;
+        margin-top: 5px;
+        margin-right: 5px;
+    }
+    .michis__img{
+        width: 125px;
+    }
     /* SERVICIOS */
     .servicios{
         display: flex;
@@ -296,6 +317,29 @@ main a:hover{
     .servicios__desc{
         margin: 10px 0;
     }
+    /* GALERIA */
+    .carrusel{
+        width: 100%;
+    }
+    /* CONTACTO */
+    #contacto{
+        width: 90vw;
+        flex-direction: column;
+    }
+    .contacto{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .form{
+        width: 100%;
+    }
+    #radio{
+        flex-direction: column;
+    }
+    .form__radio{
+        margin-left: 15px;
+    }
+
     /* FOOTER */
     .footer__lista{
         height: 75px;
