@@ -171,7 +171,7 @@ main a:hover{
     display: flex;
     flex-wrap: nowrap;
     align-items: flex-start;
-    overflow-x: scroll;
+    overflow-x: auto;
     margin: auto;
     width: 60vw;
 }
@@ -260,7 +260,7 @@ main a:hover{
 }
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 500px){
     body{
         grid-template-areas:
             "header header header header"
@@ -270,6 +270,17 @@ main a:hover{
     }
     .barraNav__logo{
         height: 75px;
+    }
+    .barraNav__lista{
+        width: 90vw;
+        font-size: 13px;
+        align-items: flex-end;
+    }
+    .barraNav__lista li{
+        padding-bottom: 10px;
+    }
+    .barraNav__lista li.active{
+        padding-bottom: 15px;
     }
     main{
         width: 90vw;
