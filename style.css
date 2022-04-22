@@ -47,10 +47,12 @@ main a:hover{
 .barraNav{
     grid-area: header;
     background-color: #4cdde9;
+    background-image: url("./imagenes/navbg.png");
     position: sticky;
     top: 0;
     z-index: 10;
     margin-bottom: 15px;
+    transition: all;
 }
 .barraNav__lista{
     list-style: none;
@@ -241,6 +243,7 @@ main a:hover{
     grid-area: footer;
     width: 100%;
     background-color: #4cdde9;
+    background-image: linear-gradient(#f6d4d2, #4cdde9);
 }
 .footer__lista{
     list-style: none;
