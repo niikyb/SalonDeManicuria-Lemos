@@ -52,7 +52,6 @@ main a:hover{
     top: 0;
     z-index: 10;
     margin-bottom: 15px;
-    transition: all;
 }
 .barraNav__lista{
     list-style: none;
@@ -64,6 +63,7 @@ main a:hover{
 }
 .barraNav__lista li{
     font-family: 'Varela Round', sans-serif;
+    transition: 0.3s;
     padding: 0.5% 1%;
 }
 .barraNav__lista li.active{
@@ -79,6 +79,11 @@ main a:hover{
     margin-left: auto;
     margin-right: auto;
     height: 100px;
+    opacity: 65%;
+    transition: 0.3s;
+}
+.barraNav__logo:hover{
+    opacity: 100%;
 }
 
 /* MAIN INDEX */
@@ -256,7 +261,11 @@ main a:hover{
 
 .footer__lista li{
     padding: 0.15%;
+    transition: 0.5s;
     
+}
+.footer__lista li:hover{
+    margin-left: 15px;
 }
 .footer__logo{
     height: 25px;
