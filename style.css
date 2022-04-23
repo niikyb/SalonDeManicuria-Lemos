@@ -210,14 +210,17 @@ main a:hover{
 .contacto{
     width: 49%;
 }
+.contacto ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 85px;
+}
 .contacto li{
     list-style: none;
 }
 .contacto__img{
     width: 100%;
-}
-.contacto__logo{
-    width: 25px;
 }
 .form{
     width: 49%;
@@ -270,9 +273,8 @@ main a:hover{
     display: flex;
     height: 115px;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
 }
-
 .footer__lista li{
     padding: 0.15%;
     transition: 0.5s;
@@ -280,9 +282,6 @@ main a:hover{
 }
 .footer__lista li:hover{
     margin-left: 15px;
-}
-.footer__logo{
-    height: 25px;
 }
 
 /* MEDIA QUERIES */
