@@ -52,6 +52,7 @@ main a:hover{
     top: 0;
     z-index: 10;
     margin-bottom: 15px;
+    animation: Nav 1s ease-in-out 3;
 }
 .barraNav__lista{
     list-style: none;
@@ -84,6 +85,10 @@ main a:hover{
 }
 .barraNav__logo:hover{
     opacity: 100%;
+    animation: logo 1.5s ease-in-out reverse forwards;
+}
+@keyframes logo {
+    0% {transform: scale(75%);}
 }
 
 /* MAIN INDEX */
@@ -96,13 +101,22 @@ main a:hover{
 .destacado__img{
     width: 50%;
     height: 100%;
+    animation: destacadoIMG 1.5s ease-in-out;
+}
+@keyframes destacadoIMG {
+    0% {transform: translateX(50%); opacity: 25%;}
 }
 .destacado__txt.uno{
     margin-left: 15px;
+    animation: destacadoTXT 1.5s ease-in-out;
 }
 .destacado__txt.dos{
     margin-right: 15px;
     text-align: right;
+    animation: destacadoTXT 1.5s ease-in-out;
+}
+@keyframes destacadoTXT {
+    0% {transform: translateX(-50%); opacity: 0%;}
 }
 .destacado__txt p{
     margin-top: 15px;
