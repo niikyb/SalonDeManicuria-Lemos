@@ -42,6 +42,9 @@ main a:hover{
     font-weight: 900;
     font-style: italic;
 }
+.img-fluid{
+    height: 100%;
+}
 
 /* HEADER */
 .barraNav{
@@ -72,12 +75,8 @@ main a:hover{
 
 /* MAIN INDEX */
 .destacado{
-    width: 95%;
     margin: auto;
     margin-bottom: 15px;
-}
-.destacado__img{
-    width: 100%;
 }
 .destacado__txt{
     margin-top: 10px;
@@ -236,6 +235,9 @@ main a:hover{
 
 /* MEDIA QUERIES */
 @media only screen and (min-width: 768px){
+    .main{
+        margin: auto;
+    }
     /* BARRA DE NAVEGACIÓN */
     .navbar{
         padding: 0;
@@ -270,13 +272,10 @@ main a:hover{
         padding: 0 5%;
         font-weight: 500;
     }
-    .nav-link .active{
+    .nav-link.active{
         background-color: #f6d4d2;
     }
     /* INDEX */
-    .main{
-        margin: auto;
-    }
     .destacado{
         display: flex;
         justify-content: space-evenly;
@@ -284,8 +283,6 @@ main a:hover{
         width: 100%;;
     }
     .destacado__img{
-        width: 50%;
-        height: 100%;
         animation: destacadoIMG 1.5s ease-in-out;
     }
     @keyframes destacadoIMG {
