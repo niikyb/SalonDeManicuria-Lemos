@@ -23,6 +23,8 @@ h1 {
     margin-top: 15px;
     text-align: center;
     font-family: 'Varela Round', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
     color: #252525;
 }
 h3{
@@ -145,18 +147,7 @@ main a:hover{
 .carrusel__ttl{
     text-align: center;
     margin-top: 15px;
-}
-.carrusel{
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    overflow-x: auto;
-    margin: auto;
-    width: 60vw;
-}
-.carrusel img{
-    width: 250px;
-    margin: 10px;
+    margin-bottom: 5px;
 }
 
 /* MAIN CONTACTO */
@@ -343,8 +334,25 @@ main a:hover{
         margin: 10px 0;
     }
     /* GALERIA */
+    .galeria{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
     .carrusel{
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 375px;
+        width: 275px;
+    }
+    .carrusel__ttl{
+        padding-bottom: 10px;
+        margin-bottom: 0;
+    }
+    .carrusel__ttl.capping{
+        padding-top: 12px;
+        padding-bottom: 36px;
     }
     /* CONTACTO */
     #contacto{
