@@ -10,13 +10,6 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    display: grid;
-    grid-template-areas:
-        "header header header header"
-        ". main main ."
-        "footer footer footer footer";
-    grid-template-rows: 1fr auto 115px;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
     background-color: #f6d4d2;
 }
 a{
@@ -45,81 +38,51 @@ main a:hover{
 
 /* HEADER */
 .barraNav{
-    grid-area: header;
-    background-color: #4cdde9;
-    background-image: url("./imagenes/navbg.png");
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 10;;
+}
+.navbar{
+    background-color: #4cdde9;
+    background-image: url("imagenes/navbg.png");
     margin-bottom: 15px;
-    animation: Nav 1s ease-in-out 3;
 }
-.barraNav__lista{
-    list-style: none;
-    height: 30px;
-    width: 60vw;
-    margin: auto;
+.navbar__logo{
+    height: 75px;
+}
+.nav-link{
     display: flex;
-    justify-content: space-around;
-}
-.barraNav__lista li{
+    align-items: center;
+    height: 30px;
     font-family: 'Varela Round', sans-serif;
-    transition: 0.3s;
-    padding: 0.5% 1%;
+    color: #222222;
+    transition: 0.5s;
 }
-.barraNav__lista li.active{
-    background-color: #f6d4d2;
-    padding: 0.5% 3%;
-}
-.barraNav__lista li:hover{
-    background-color: #f6d4d2;
-    padding: 0.5% 6.5%;
-}
-.barraNav__logo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100px;
-    opacity: 65%;
-    transition: 0.3s;
-}
-.barraNav__logo:hover{
-    opacity: 100%;
-    animation: logo 1.5s ease-in-out reverse forwards;
-}
-@keyframes logo {
-    0% {transform: scale(75%);}
+.nav-link:hover{
+    padding-left: 15px;
+    background-color:#f6d4d2a0;
 }
 
 /* MAIN INDEX */
+main{
+    width: 90vw;
+}
 .destacado{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 15px auto;
-    width: 100%;
+    flex-direction: column;
 }
 .destacado__img{
-    width: 50%;
-    height: 100%;
-    animation: destacadoIMG 1.5s ease-in-out;
-}
-@keyframes destacadoIMG {
-    0% {transform: translateX(50%); opacity: 25%;}
+    width: 100%;
 }
 .destacado__txt.uno{
-    margin-left: 15px;
-    animation: destacadoTXT 1.5s ease-in-out;
+    margin: 10px 0;
+}
+.destacado.dos{
+    flex-direction: column-reverse;
+    margin-bottom: 15px;
 }
 .destacado__txt.dos{
-    margin-right: 15px;
-    text-align: right;
-    animation: destacadoTXT 1.5s ease-in-out;
-}
-@keyframes destacadoTXT {
-    0% {transform: translateX(-50%); opacity: 0%;}
-}
-.destacado__txt p{
-    margin-top: 15px;
+    text-align: left;
+    margin: 10px 0;
 }
 
 /* MAIN INFO */
@@ -285,49 +248,42 @@ main a:hover{
 }
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 500px){
-    body{
-        grid-template-areas:
-            "header header header header"
-            "main main main main"
-            "footer footer footer footer";
-        grid-template-rows: 1fr auto 75px;
-    }
-    .barraNav__logo{
-        height: 75px;
-    }
-    .barraNav__lista{
-        width: 90vw;
-        font-size: 13px;
-        align-items: flex-end;
-    }
-    .barraNav__lista li{
-        padding-bottom: 10px;
-    }
-    .barraNav__lista li.active{
-        padding-bottom: 15px;
-    }
-    main{
-        width: 90vw;
-    }
-    /* INDEX */
-    .destacado{
+@media only screen and (min-width: 768px){
+    .navbar{
         flex-direction: column;
+        padding: 0;
     }
-    .destacado__img{
-        width: 100%;
+    .navbar__logo{
+        height: 100px;
+        margin: auto;
+        opacity: 65%;
+        transition:0.3s;
     }
-    .destacado__txt.uno{
-        margin: 10px 0;
+    .navbar__logo:hover{
+        opacity: 100%;
+        animation: logo 1.5s ease-in-out reverse forwards;
     }
-    .destacado.dos{
-        flex-direction: column-reverse;
-        margin-bottom: 15px;
+    @keyframes logo {
+        0% {transform: scale(75%);}
     }
-    .destacado__txt.dos{
-        text-align: left;
-        margin: 10px 0;
+    .navbar-nav{
+        width: 60vw;
+        margin: auto;
+        justify-content: space-evenly;
     }
+    .nav-item{
+        text-align: center;
+        transition: 0.5s;
+    }
+    .nav-item:hover{
+        background-color: #f6d4d2;
+        padding: 0 5%;
+        font-weight: 500;
+    }
+    .nav-link .active{
+        background-color: #f6d4d2;
+    }
+    
     /* INFO */
     .nosotros{
         display: inline-block;
