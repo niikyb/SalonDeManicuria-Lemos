@@ -16,7 +16,7 @@
 <body>
     <header class="barraNav">
         <nav class="navbar navbar-expand-md navbar-light">
-            <div class="container-fluid">
+            <div class="container-fluid barraNav__barra">
                 <a href="#"><img src="./imagenes/logo.png" class="navbar__logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -40,21 +40,26 @@
             </div>
           </nav>
     </header>
-    <main>
-       <section class="destacado">
-            <img src="./imagenes/serv/semi-destacado-1.png" alt="esmaltado semipermanente con joyería" class="destacado__img">
-            <div class="destacado__txt uno">
-                <h3>Uñas Fuertes y Saludables</h3>
-                <p>En Blue Sky, priorizamos que tus uñas crezcan sanas y fuertes para que puedas mantener el largo que siempre quisiste de manera consistente. Por eso, utilizamos productos <a href="https://pink-mask.com/2022/03/08/que-son-los-esmaltes-13-free-formula-y-por-que-elegirlos/">13-Free</a> que son libres de Tolueno, Formaldehído, Trisfosfato de Sodio, entre otros químicos posiblemente tóxicos, además de ser libres de parabenos, gluten y derivados de animales.</p></div>
-       </section>
+    <main class="container-fluid">
+        <div class="row">
+            <section class="col-md-8 main">
+                <article class="destacado">
+                    <img src="./imagenes/serv/semi-destacado-1.png" alt="esmaltado semipermanente con joyería" class="destacado__img">
+                    <div class="destacado__txt">
+                        <h3>Uñas Fuertes y Saludables</h3>
+                        <p>En Blue Sky, priorizamos que tus uñas crezcan sanas y fuertes para que puedas mantener el largo que siempre quisiste de manera consistente. Por eso, utilizamos productos <a href="https://pink-mask.com/2022/03/08/que-son-los-esmaltes-13-free-formula-y-por-que-elegirlos/">13-Free</a> que son libres de Tolueno, Formaldehído, Trisfosfato de Sodio, entre otros químicos posiblemente tóxicos, además de ser libres de parabenos, gluten y derivados de animales.</p>
+                    </div>
+                </article>
+                <article class="destacado dos">
+                    <img src="./imagenes/serv/semi-destacado-2.png" alt="esmaltado semipermanente con flores" class="destacado__img">
+                    <div class="destacado__txt dos">
+                        <h3>Diseño Full Color</h3>
+                        <p>Desde Blue Sky, queremos asegurarnos de que tus uñas siempre sean el tema de conversación. Por eso decidimos incluir el diseño en el presupuesto final de cada servicio, para que puedas lucir todos esos diseños extravagantes que siempre quisiste al menor precio posible!</p>
+                    </div>
+                </article>                     
+            </section>
 
-       <section class="destacado dos">
-            <div class="destacado__txt dos">
-                <h3>Diseño Full Color</h3>
-                <p>Desde Blue Sky, queremos asegurarnos de que tus uñas siempre sean el tema de conversación. Por eso decidimos incluir el diseño en el presupuesto final de cada servicio, para que puedas lucir todos esos diseños extravagantes que siempre quisiste al menor precio posible!</p>
-            </div>
-            <img src="./imagenes/serv/semi-destacado-2.png" alt="esmaltado semipermanente con flores" class="destacado__img">
-       </section>
+        </div>
     </main>
     <footer class="footer">
         <div>
