@@ -17,7 +17,7 @@
     <header class="barraNav">
         <nav class="navbar navbar-expand-md navbar-light">
             <div class="container-fluid barraNav__barra">
-                <a href="../index.html"><img src="../imagenes/logo.png" class="navbar__logo"></a>
+                <a href="../index.html"><img src="../imagenes/logo.png" class="navbar__logo" alt="logo de marca"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -40,61 +40,76 @@
             </div>
           </nav>
     </header>
-    <main>
-        <div id="rect"></div>
-       <h1>¿Quiénes somos?</h1>
-       <section>
-            <article class="nosotros">
-                    <img src="../imagenes/staff/foto-perfil.png" alt="foto de perfil" class="nosotros__img">
-                    <div>
-                        <h2>Nicole.</h2>
-                        <p>Manicurista desde 2019, tiene 6 gatos (véase <a href="#michis">Los Michis</a>) y una obsesión por Genshin Impact.</p>
-                    </div>
-            </article>
-            <article class="nosotros">
-                <img src="../imagenes/staff/blue-sky.png" alt="logo de marca" class="nosotros__img">
-                <div>
-                    <h2>Blue Sky.</h2>
-                    <p>Blue Sky nació en Diciembre de 2019, durante un largo y arduo viaje en micro (colectivo para los no-platenses) cuestionándome internamente qué nombre me gustaba para la página de Instagram; después de mucho debatir, recordé una frase que había escuchado alguna vez en un anime "空は青いです" que significa "el cielo es azul".</p>
+    <main class="container-fluid">
+        <div class="row">
+            <section class="col-lg-8 col-md-10 col-xs-11 main">
+                <h1>¿Quiénes somos?</h1>
+                <!-- Sección Nosotros -->
+                <section class="nosotros">
+                    <article class="col nosotros__card">
+                        <img src="../imagenes/staff/foto-perfil.png" alt="foto de perfil" class="nosotros__img float-start img-fluid">
+                        <div>
+                            <h2>Nicole.</h2>
+                            <p>Manicurista desde 2019, tiene 6 gatos (véase <a href="#michis">Los Michis</a>) y una obsesión por Genshin Impact.</p>
+                        </div>
+                    </article>
+                    <article class="col nosotros__card">
+                        <img src="../imagenes/staff/blue-sky.png" alt="logo de marca" class="nosotros__img float-start img-fluid">
+                        <div>
+                            <h2>Blue Sky.</h2>
+                            <p>Blue Sky nació en Diciembre de 2019, durante un largo y arduo viaje en micro (colectivo para los no-platenses) cuestionándome internamente qué nombre me gustaba para la página de Instagram; después de mucho debatir, recordé una frase que había escuchado alguna vez en un anime "空は青いです" que significa "el cielo es azul".</p>
+                        </div>
+                    </article>
+                </section>            
+                <!-- Sección Michis -->       
+                <hr>
+                <div class="row" id="michis">
+                    <h2 class="michis__ttl">Los Michis</h2>
+                    <article class="card col-6 col-lg-3 col-md-4">
+                        <img src="../imagenes/staff/kotarou.png" class="card-img-top michis__img" alt="...">
+                        <div class="card-body">
+                            <h3>Kotarō</h3>
+                            <p>Director Ejecutivo</p>
+                        </div>
+                    </article>
+                    <article class="card col-6 col-lg-3 col-md-4">
+                        <img src="../imagenes/staff/haizaki.png" class="card-img-top michis__img" alt="...">
+                        <div class="card-body">
+                            <h3>Haizaki</h3>
+                            <p>Presidente</p>
+                        </div>
+                    </article>
+                    <article class="card col-6 col-lg-3 col-md-4">
+                        <img src="../imagenes/staff/jimin.png" class="card-img-top michis__img" alt="...">
+                        <div class="card-body">
+                            <h3>Jimin</h3>
+                            <p>Gerente de RRPP</p>
+                        </div>
+                    </article>
+                    <article class="card col-6 col-lg-3 col-md-4">
+                        <img src="../imagenes/staff/xero.png" class="card-img-top michis__img" alt="...">
+                        <div class="card-body">
+                            <h3>Xero</h3>
+                            <p>Supervisor</p>
+                        </div>
+                    </article>
+                    <article class="card col-6 col-lg-3 col-md-4">
+                        <img src="../imagenes/staff/persian.png" class="card-img-top michis__img" alt="...">
+                        <div class="card-body">
+                            <h3>Persian</h3>
+                            <p>Empleada del Mes</p>
+                        </div>
+                    </article>
+                    <article class="card col-6 col-lg-3 col-md-4">
+                        <img src="../imagenes/staff/yuki.png" class="card-img-top michis__img" alt="...">
+                        <div class="card-body">
+                            <h3>Yuki</h3>
+                            <p>Gerente de Ventas</p>
+                        </div>
+                    </article>
                 </div>
-            </article>
-        </section>
-       <hr>
-       <section id="michis">
-            <h2 class="michis__ttl">Los Michis</h2>
-            <div class="michis">
-                <article class="michis__card">
-                    <img src="../imagenes/staff/kotarou.png" alt="foto de gato durmiendo" class="michis__img">
-                    <h3>Kotarō</h3>
-                    <p>Director Ejecutivo</p>
-                </article>
-                <article class="michis__card">
-                    <img src="../imagenes/staff/haizaki.png" alt="foto de gato mirando hacia la derecha" class="michis__img">
-                    <h3>Haizaki</h3>
-                    <p>Presidente</p>
-                </article>
-                <article class="michis__card">
-                    <img src="../imagenes/staff/jimin.png" alt="foto de gato sobre un regazo" class="michis__img">
-                    <h3>Jimin</h3>
-                    <p>Gerente de RRPP</p>
-                </article>
-                <article class="michis__card">
-                    <img src="../imagenes/staff/xero.png" alt="foto de gato mirando a la cámara" class="michis__img">
-                    <h3>Xero</h3>
-                    <p>Supervisor</p>
-                </article>
-                <article class="michis__card">
-                    <img src="../imagenes/staff/persian.png" alt="foto de gato acostado" class="michis__img">
-                    <h3>Persian</h3>
-                    <p>Empleada del Mes</p>
-                </article>
-                <article class="michis__card">
-                    <img src="../imagenes/staff/yuki.png" alt="foto de gato mirando hacia la derecha" class="michis__img">
-                    <h3>Yuki</h3>
-                    <p>Gerente de Ventas</p>
-                </article>
-            </div>            
-        </section> 
+            </section>
+        </div>
     </main>
     <footer class="footer">
         <div>
