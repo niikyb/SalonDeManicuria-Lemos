@@ -122,13 +122,10 @@ main a:hover{
 .servicios{
     display: flex;
     flex-direction: column;
-    width: 90vw;
     margin: auto;
     margin-top: 15px;
 }
-.servicios img{
-    width: 100%;
-    height: 100%;
+.servicios__img{
     margin-bottom: 10px;
 }
 .servicios__desc p{
@@ -314,18 +311,14 @@ main a:hover{
 
     /* SERVICIOS */
     .servicios{
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 60vw;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 15px auto;
+    width: 100%;;
     }
-    .servicios img{
-        width: 50%;
+    .servicios__img{
+    margin-right: 15px;
     }
-    .servicios__desc{
-        margin: 10px 0;
-        margin-left: 15px;
-    }
-
 
     /* GALERIA */
     .galeria{
