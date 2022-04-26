@@ -40,61 +40,68 @@
             </div>
           </nav>
     </header>
-    <main id="contacto">
-        <div class="contacto">
-            <img src="../imagenes/serv/semi-contacto.png" alt="foto de esmaltado semipermanente con flores encapsuladas" class="contacto__img">
-            <div class="contacto__info">
-                <p>Completá el formulario para reservar tu turno! En caso de que ocurriese una superposición de turnos, nos vamos a poner en contacto con vos en la brevedad para pactar un día y hora que te sirva!!</p>
-                <p>También podés contactarnos por nuestras redes sociales o Whatsapp los días Lunes a Sábado de 9hs-20hs.</p>
-                <ul>
-                    <li><a href="https://www.instagram.com/bluesky_nails" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i> bluesky_nails</a></li>
-                    <li><a href="https://www.facebook.com/blueskynails.lp" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i> Blue Sky</a></li>
-                    <li><a href="https://wa.me/message/VMG5N2UQOLQ7F1" target="_blank"><i class="fa-brands fa-whatsapp fa-xl"></i> (221) 674-8636</a></li>
-                </ul>                
-            </div>
-        </div>
-        <form class="form">
-            <h1>Contacto</h1>
-            <div>
-                <input type="text" placeholder="Nombre y Apellido" class="form__input">
-            </div>
-            <div>
-                <input type="tel" placeholder="Número de Teléfono" class="form__input">
-            </div>
-            <div>
-                <p>Fecha y Hora</p>
-                <input type="date" class="form__input">
-            </div>
-            <div>
-                <select name="turno" class="form__input">
-                    <option value="ma">Mañana (10hs)</option>
-                    <option value="ta">Tarde (15hs)</option>
-                </select>
-            </div>
-            <div>
-                <p>Elegí tu servicio:</p>
-                <div id="radio">
-                    <div class="form__radio">
-                        <input type="radio" name="servicio" value="semi">
-                        <label for="servicio">Semipermanente</label>
+    <main id="contacto" class="container-fluid">
+        <div class="row">
+            <section class="col-lg-8 col-md-10 col-xs-12 main" id="contacto">
+                <article class="col-md-5 contacto">
+                    <img src="../imagenes/serv/semi-contacto.png" alt="foto de esmaltado semipermanente con flores encapsuladas" class="img-fluid contacto__img">
+                    <div class="contacto__info">
+                        <p>Completá el formulario para reservar tu turno! En caso de que ocurriese una superposición de turnos, nos vamos a poner en contacto con vos en la brevedad para pactar un día y hora que te sirva!!</p>
+                        <p>También podés contactarnos por nuestras redes sociales o Whatsapp los días Lunes a Sábado de 9hs-20hs.</p>
+                        <ul>
+                            <li><a href="https://www.instagram.com/bluesky_nails" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i> bluesky_nails</a></li>
+                            <li><a href="https://www.facebook.com/blueskynails.lp" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i> Blue Sky</a></li>
+                            <li><a href="https://wa.me/message/VMG5N2UQOLQ7F1" target="_blank"><i class="fa-brands fa-whatsapp fa-xl"></i> (221) 674-8636</a></li>
+                        </ul>  
                     </div>
-                    <div class="form__radio">
-                        <input type="radio" name="servicio" value="capping">
-                        <label for="servicio">Capping</label>
-                    </div>
-                    <div class="form__radio">
-                        <input type="radio" name="servicio" value="esculpidas">
-                        <label for="servicio">Esculpidas</label>
-                    </div>
-                </div>
-            </div>    
-            <div>
-                <input type="text" placeholder="Dejanos un mensaje" class="form__msj">
-            </div>
-            <div>
-                <input type="button" value="Enviar" class="form__btn">
-            </div>
-        </form>
+                </article>
+                <article class="col-md-6 form">
+                    <form>
+                        <h1>Contacto</h1>
+                        <div class="mb-3 form-floating form__input">
+                            <input type="text" class="form-control" name="nombre" placeholder="Nombre y Apellido">
+                            <label for="nombre">Nombre y Apellido</label>
+                        </div>
+                        <div class="mb-3 form-floating form__input">
+                            <input type="text" class="form-control" name="tel" placeholder="Número de Teléfono">
+                            <label for="tel">Número de Teléfono</label>
+                        </div>
+                        <div class="mb-3 form-floating form__input">
+                            <input type="date" class="form-control" name="fecha">
+                            <label for="fecha">Fecha</label>
+                        </div>
+                        <div class="mb-3 form-floating form__input">
+                            <select class="form-select" name="turno">
+                                <option value="ma">Mañana (10hs)</option>
+                                <option value="ta">Tarde (15hs)</option>
+                            </select>
+                            <label for="turno">Turno</label>
+                        </div>
+                        <div class="mb-3 form__input">
+                            <p>Elegí tu servicio:</p>
+                            <div id="radio">
+                                <div class="form-check form__radio">
+                                    <input class="form-check-input" type="radio" name="servicio" value="semi">
+                                    <label class="form-check-label" for="semi">Semipermanente</label>
+                                </div>
+                                <div class="form-check form__radio">
+                                    <input class="form-check-input" type="radio" name="servicio" value="capping">
+                                    <label class="form-check-label" for="capping">Capping</label>
+                                </div>
+                                <div class="form-check form__radio">
+                                    <input class="form-check-input" type="radio" name="servicio" id="esculpidas">
+                                    <label class="form-check-label" for="esculpidas">Esculpidas</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 form-floating form__input">
+                            <textarea class="form-control" placeholder="Dejanos un mensaje" name="msj" style="height: 150px"></textarea>
+                            <label for="msj">Dejanos un mensaje</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                    
+                </article>
     </main>
     <footer class="footer">
         <div>

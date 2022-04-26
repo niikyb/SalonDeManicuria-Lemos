@@ -45,9 +45,6 @@ main a:hover{
     font-weight: 900;
     font-style: italic;
 }
-.img-fluid{
-    height: 100%;
-}
 
 /* HEADER */
 .barraNav{
@@ -141,65 +138,39 @@ main a:hover{
 }
 
 /* MAIN CONTACTO */
-#contacto{
-    width: 90vw;
-    display: flex;
-    flex-direction: column;
-}
-.contacto{
-    width: 90vw;
-    margin-bottom: 15px;
-}
 .contacto ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 85px;
+    padding: 0;
 }
 .contacto li{
     list-style: none;
 }
-.contacto__img{
-    width: 100%;
-}
 .form{
-    width: 100%;
     background-color: #4cdde9;
-    padding-bottom: 10px;
     border: solid 1px #222222;
+    padding-bottom: 10px;
 }
-#radio{
-    display: flex;
-    flex-direction: column;
+.form__input{
+    width: 95%;
+    margin: auto;
 }
-.form__radio{
-    margin-left: 15px;
-}
-
-.form p{
+.form__input p{
     text-align: center;
     margin-bottom: 5px;
 }
-.form__input{
-    display: block;
-    margin: 10px auto;
-    width: 75%;
-    padding: 5px;
+#radio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .form__radio{
-    margin-left: 5px;
-    margin-bottom: 15px;
+    margin-right: 5px;
 }
-.form__msj{
-    display: block;
-    margin: auto;
-    width: 95%;
-    padding-top: 5px;
-    padding-bottom: 150px;
-}
-.form__btn{
-    margin-top: 5px;
-    margin-left: 75%;
+.btn{
+    margin-left: 10px;
+    background-color:#f6d4d291;
+    border: solid 1px #222222;
+    color: #222222;
+    font-weight: bold;
 }
 
 /* FOOTER */
@@ -342,31 +313,11 @@ main a:hover{
         padding-bottom: 36px;
     }
 
-
-
     /* CONTACTO */
     #contacto{
-        width: 60vw;
-        flex-direction: row;
-        justify-content: space-between;
+        display: flex;
+        justify-content: space-evenly;
     }
-    .contacto{
-        width: 49%;
-    }
-    .contacto__img{
-        width: 100%;
-    }
-    .form{
-        width: 49%;
-        height: 100%;
-    }
-    #radio{
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 95%;
-        margin: auto;
-    }
-
     /* FOOTER */
     .footer{
         height: 115px;
