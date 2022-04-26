@@ -240,6 +240,7 @@ main a:hover{
     .nav-link.active{
         background-color: #f6d4d2;
     }
+    
     /* INDEX */
     .destacado{
         display: flex;
@@ -277,9 +278,6 @@ main a:hover{
         width: 175px;
     }
 
-
-
-
     /* SERVICIOS */
     .servicios{
     flex-direction: row;
@@ -293,8 +291,6 @@ main a:hover{
 
     /* GALERIA */
     .galeria{
-        display: flex;
-        flex-wrap: wrap;
         justify-content: space-evenly;
     }
     .carrusel{
@@ -318,6 +314,7 @@ main a:hover{
         display: flex;
         justify-content: space-evenly;
     }
+
     /* FOOTER */
     .footer{
         height: 115px;
