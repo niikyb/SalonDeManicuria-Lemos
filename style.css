@@ -93,6 +93,7 @@ main a:hover{
     width: 125px;
     border-radius: 50%;
     margin-right: 10px;
+    box-shadow: 2px 2px 2px 1px #22222229;
 }
 .michis__ttl{
     text-align: center;
@@ -104,7 +105,7 @@ main a:hover{
     justify-content: space-evenly;
 }
 .card{
-    background-color: rgba(240, 248, 255, 0);
+    background-color: transparent;
     border: none;
     text-align: center;
 }
@@ -113,6 +114,7 @@ main a:hover{
 }
 .michis__img{
     border-radius: 50%;
+    box-shadow: 2px 2px 2px 1px #22222229;
 }
 
 /* MAIN SERVICIOS */
