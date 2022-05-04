@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    min-height: 100%;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: $secundario;
+    a{
+        text-decoration: none;
+        color: $textos;
+        &:hover{
+            color: $textos;
+        }
+    }
+    h1,h2,h3,h4,h5,h6{
+        font-family: $titulos;
+        font-weight: 600;
+        color: $encabezados;
+        text-shadow: $sombreado-texto;
+    }
+    h1 {
+        margin-top: 15px;
+        text-align: center;
+    }
+    main{
+        font-family: $cuerpo;
+        color: $textos;
+        min-height: 100vh;
+        margin: auto;
+        margin-bottom: 15px;
+        a:hover{
+            font-weight: 900;
+            font-style: italic;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .main{
+        margin: auto;
+    }
+}

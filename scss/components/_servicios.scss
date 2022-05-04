@@ -1,0 +1,34 @@
+.servicios{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+    &__img{
+        margin-bottom: 10px;
+        border-radius: 1%;
+        box-shadow: $sombreado-imagen
+    }
+    &__desc{
+        p{
+            margin-top: 15px;
+        }
+    }     
+    span{
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (min-width:768px){
+    .servicios{
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 15px auto;
+        width: 100%;;
+        text-align: left;
+        &__img{
+            margin-right: 15px;
+        }
+    }
+}

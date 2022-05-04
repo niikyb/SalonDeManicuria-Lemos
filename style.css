@@ -113,27 +113,6 @@ main a:hover{
     box-shadow: 2px 2px 2px 1px #22222229;
 }
 
-/* MAIN SERVICIOS */
-.servicios{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: auto;
-    margin-top: 15px;
-}
-.servicios__img{
-    margin-bottom: 10px;
-    border-radius: 1%;
-    box-shadow: 2px 2px 2px 1px #22222229
-}
-.servicios__desc p{
-    margin-top: 15px;
-}
-.precio{
-    font-size: 18px;
-    font-weight: bold;
-}
-
 /* MAIN GALERIA */
 .carrusel__ttl{
     text-align: center;
@@ -280,18 +259,6 @@ main a:hover{
     /* INFO */
     .nosotros__img{
         width: 175px;
-    }
-
-    /* SERVICIOS */
-    .servicios{
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 15px auto;
-    width: 100%;;
-    text-align: left;
-    }
-    .servicios__img{
-    margin-right: 15px;
     }
 
     /* GALERIA */

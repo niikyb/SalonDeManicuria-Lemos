@@ -1,0 +1,32 @@
+.footer{
+    height: 75px;
+    width: 100%;
+    background-image: linear-gradient($secundario, $principal);
+    &__lista{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 75px;
+        margin-left: 15px;
+        padding: 0;
+        font-family: $titulos;
+        list-style: none;
+        li{
+            padding: 0.15%;
+            transition: all 0.5s;
+            &:hover{
+                margin-left: 15px;
+                color: $textos;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .footer{
+        height: 115px;
+        &__lista{
+            height: 115px;
+        }
+    }
+}
