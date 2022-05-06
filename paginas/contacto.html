@@ -40,7 +40,7 @@
             </div>
           </nav>
     </header>
-    <main id="contacto" class="container-fluid">
+    <main class="container-fluid">
         <div class="row">
             <section class="col-lg-8 col-md-10 col-xs-12 main" id="contacto">
                 <article class="col-md-5 contacto">
@@ -59,19 +59,19 @@
                     <form>
                         <h1>Contacto</h1>
                         <div class="mb-3 form-floating form__input">
-                            <input type="text" class="form-control" name="nombre" placeholder="Nombre y Apellido">
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellido">
                             <label for="nombre">Nombre y Apellido</label>
                         </div>
                         <div class="mb-3 form-floating form__input">
-                            <input type="text" class="form-control" name="tel" placeholder="Número de Teléfono">
+                            <input type="text" class="form-control" id="tel" placeholder="Número de Teléfono">
                             <label for="tel">Número de Teléfono</label>
                         </div>
                         <div class="mb-3 form-floating form__input">
-                            <input type="date" class="form-control" name="fecha">
+                            <input type="date" class="form-control" id="fecha">
                             <label for="fecha">Fecha</label>
                         </div>
                         <div class="mb-3 form-floating form__input">
-                            <select class="form-select" name="turno">
+                            <select class="form-select" id="turno">
                                 <option value="ma">Mañana (10hs)</option>
                                 <option value="ta">Tarde (15hs)</option>
                             </select>
@@ -81,11 +81,11 @@
                             <p>Elegí tu servicio:</p>
                             <div id="radio">
                                 <div class="form-check form__radio">
-                                    <input class="form-check-input" type="radio" name="servicio" value="semi">
+                                    <input class="form-check-input" type="radio" name="servicio" id="semi">
                                     <label class="form-check-label" for="semi">Semipermanente</label>
                                 </div>
                                 <div class="form-check form__radio">
-                                    <input class="form-check-input" type="radio" name="servicio" value="capping">
+                                    <input class="form-check-input" type="radio" name="servicio" id="capping">
                                     <label class="form-check-label" for="capping">Capping</label>
                                 </div>
                                 <div class="form-check form__radio">
@@ -95,13 +95,14 @@
                             </div>
                         </div>
                         <div class="mb-3 form-floating form__input">
-                            <textarea class="form-control" placeholder="Dejanos un mensaje" name="msj" style="height: 150px"></textarea>
+                            <textarea class="form-control" placeholder="Dejanos un mensaje" id="msj" style="height: 150px"></textarea>
                             <label for="msj">Dejanos un mensaje</label>
                         </div>
                         <button type="submit" class="btn btn-primary">Enviar</button>
                     </form>
-                    
                 </article>
+            </section>
+        </div>
     </main>
     <footer class="footer">
         <div>
