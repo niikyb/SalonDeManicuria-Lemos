@@ -50,7 +50,7 @@ main a:hover{
 }
 .navbar{
     background-color: #4cdde9;
-    background-image: url("imagenes/navbg.png");
+    background-image: url("imagenes/navbg.webp");
     margin-bottom: 15px;
 }
 .navbar__logo{
