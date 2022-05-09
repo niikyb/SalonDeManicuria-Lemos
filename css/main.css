@@ -116,6 +116,9 @@ body {
 .destacado {
   margin: auto;
   margin-bottom: 15px; }
+  .destacado__img {
+    box-shadow: 2px 2px 2px 1px #22222229;
+    border-radius: 1%; }
   .destacado__txt {
     margin-top: 10px; }
 
@@ -156,9 +159,9 @@ body {
     margin: 10px 0; }
   .nosotros__img {
     width: 125px;
-    border-radius: 50%;
     margin-right: 10px;
-    box-shadow: 2px 2px 2px 1px #22222229; }
+    box-shadow: 2px 2px 2px 1px #22222229;
+    border-radius: 50%; }
 
 #michis {
   margin-top: -130px;
@@ -171,8 +174,8 @@ body {
   text-align: center; }
 
 .michis__img {
-  border-radius: 50%;
-  box-shadow: 2px 2px 2px 1px #22222229; }
+  box-shadow: 2px 2px 2px 1px #22222229;
+  border-radius: 50%; }
 
 .card {
   background-color: transparent;
@@ -194,8 +197,8 @@ body {
   margin-top: 15px; }
   .servicios__img {
     margin-bottom: 10px;
-    border-radius: 1%;
-    box-shadow: 2px 2px 2px 1px #22222229; }
+    box-shadow: 2px 2px 2px 1px #22222229;
+    border-radius: 1%; }
   .servicios__desc p {
     margin-top: 15px; }
   .servicios span {
@@ -217,6 +220,10 @@ body {
   text-align: center;
   margin-top: 15px;
   margin-bottom: 5px; }
+
+.carousel-inner {
+  box-shadow: 2px 2px 2px 1px #22222229;
+  border-radius: 3%; }
 
 @media only screen and (min-width: 768px) {
   .galeria {
@@ -240,9 +247,16 @@ body {
 .contacto li {
   list-style: none; }
 
+.contacto__img {
+  box-shadow: 2px 2px 2px 1px #22222229;
+  border-radius: 2%;
+  margin-bottom: 10px; }
+
 .form {
   background-color: #4cdde9;
   border: solid 1px #222222;
+  box-shadow: 2px 2px 2px 1px #22222229;
+  border-radius: 1%;
   padding-bottom: 10px; }
   .form__input {
     width: 95%;

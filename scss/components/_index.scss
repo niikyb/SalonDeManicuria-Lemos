@@ -1,6 +1,9 @@
 .destacado{
     margin: auto;
     margin-bottom: 15px;
+    &__img{
+        @include img (1%)
+    }
     &__txt{
         margin-top: 10px;
         h3{

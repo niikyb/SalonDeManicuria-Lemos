@@ -5,8 +5,13 @@
     li{
         list-style: none;
     }
+    &__img{
+        @include img (2%);
+        margin-bottom: 10px;
+    }
 }
 .form{
+    @include img (1%);
     background-color: map-get($colores, principal);
     border: $bordes;
     padding-bottom: 10px;

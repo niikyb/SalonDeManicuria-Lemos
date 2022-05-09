@@ -10,14 +10,14 @@ $tipografias:(
     titulos: ('Varela Round', sans-serif),
     cuerpo: ('Comfortaa', sans-serif)
     );
-    
 
-//Sombras//
 $sombreado-texto: 2px 2px #22222229;
-$sombreado-imagen: 2px 2px 2px 1px #22222229;
-
-//Bordes//
 $bordes: solid 1px #222222;
+
+@mixin img ($radio){
+    box-shadow: 2px 2px 2px 1px #22222229;;
+    border-radius: $radio;
+}
 
 @mixin flex($direction, $justify){
     display: flex;

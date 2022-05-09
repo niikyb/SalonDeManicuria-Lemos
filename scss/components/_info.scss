@@ -8,9 +8,8 @@
     }
     &__img{
         width: 125px;
-        border-radius: 50%;
         margin-right: 10px;
-        box-shadow: 2px 2px 2px 1px #22222229;
+        @include img (50%)
     }
 }
 #michis{
@@ -24,8 +23,7 @@
         text-align: center;
     };
     &__img{
-        border-radius: 50%;
-        box-shadow: 2px 2px 2px 1px #22222229;
+        @include img (50%)
     }
 }
 .card{

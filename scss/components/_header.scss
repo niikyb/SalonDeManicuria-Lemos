@@ -5,7 +5,7 @@
 }
 .navbar{
     background-color: map-get($colores, principal);
-    background-image: url("../../imagenes/navbg.webp");
+    background-image: url("../imagenes/navbg.webp");
     margin-bottom: 15px;
     &__logo{
         height: 75px;
