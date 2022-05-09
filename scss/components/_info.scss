@@ -1,0 +1,45 @@
+.nosotros{
+    @include flex(column, flex-start);
+    h2{
+        @extend %encabezados;
+    }
+    &__card{
+        margin: 10px 0;
+    }
+    &__img{
+        width: 125px;
+        border-radius: 50%;
+        margin-right: 10px;
+        box-shadow: 2px 2px 2px 1px #22222229;
+    }
+}
+#michis{
+    margin-top: -130px;
+    padding-top: 130px;
+    @include flex(row, space-evenly);
+}
+.michis{
+    &__ttl{
+        @extend %encabezados;
+        text-align: center;
+    };
+    &__img{
+        border-radius: 50%;
+        box-shadow: 2px 2px 2px 1px #22222229;
+    }
+}
+.card{
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    &-body h4{
+        @extend %encabezados;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .nosotros__img{
+        width: 175px;
+    }
+}

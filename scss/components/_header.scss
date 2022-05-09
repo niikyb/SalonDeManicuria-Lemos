@@ -4,8 +4,8 @@
     z-index: 10;;
 }
 .navbar{
-    background-color: $principal;
-    background-image: url("../imagenes/navbg.png");
+    background-color: map-get($colores, principal);
+    background-image: url("../../imagenes/navbg.webp");
     margin-bottom: 15px;
     &__logo{
         height: 75px;
@@ -14,8 +14,8 @@
         display: flex;
         align-items: center;
         height: 30px;
-        font-family: $titulos;
-        color: $textos;
+        font-family: map-get($tipografias, titulos);
+        color: map-get($colores, titulos);
         transition: all 0.5s;
         &:hover{
             padding-left: 15px;
@@ -42,7 +42,7 @@
                 animation: logo 1.5s ease-in-out reverse forwards;
             }
             @keyframes logo {
-                0% {transform: scale(75%);}
+                0% {transform: scale(0.75);}
             }
         }
         &-nav{
@@ -54,12 +54,12 @@
             text-align: center;
             transition: all 0.5s;
             &:hover{
-                background-color: $secundario;
+                background-color: map-get($colores, secundario);
                 padding: 0 5%;
                 font-weight: 500;
             }
             .active{
-            background-color: $secundario;
+                background-color: map-get($colores, secundario);
             }
         }
     }

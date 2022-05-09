@@ -1,13 +1,33 @@
-//Colores//
-$principal: #4cdde9;
-$secundario: #f6d4d2;
-$textos: #222222;
-$encabezados: #252525;
+$colores:(
+    principal: #4cdde9,
+    secundario: #f6d4d2,
+    gradiente: linear-gradient(#f6d4d2, #4cdde9),
+    textos: #222222,
+    encabezados: darken(#222222, 5)
+    );
 
-//Tipografías//
-$titulos: 'Varela Round', sans-serif;
-$cuerpo: 'Comfortaa', sans-serif;
+$tipografias:(
+    titulos: ('Varela Round', sans-serif),
+    cuerpo: ('Comfortaa', sans-serif)
+    );
+    
 
 //Sombras//
 $sombreado-texto: 2px 2px #22222229;
 $sombreado-imagen: 2px 2px 2px 1px #22222229;
+
+//Bordes//
+$bordes: solid 1px #222222;
+
+@mixin flex($direction, $justify){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+};
+
+%encabezados{
+    font-family: map-get($tipografias, titulos);
+    font-weight: 600;
+    color:map-get($colores, encabezados);
+    text-shadow: $sombreado-texto;
+}

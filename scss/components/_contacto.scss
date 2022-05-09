@@ -1,0 +1,48 @@
+.contacto{
+    ul{
+    padding: 0;
+    }
+    li{
+        list-style: none;
+    }
+}
+.form{
+    background-color: map-get($colores, principal);
+    border: $bordes;
+    padding-bottom: 10px;
+    &__input{
+        width: 95%;
+        margin: auto;
+        p{
+            text-align: center;
+            margin-bottom: 5px;
+        }
+    }
+    &__radio{
+        margin-right: 5px;
+    }
+}
+#radio{
+    @include flex (row, space-evenly);
+    flex-wrap: wrap;
+}
+.btn{
+    margin-left: 10px;
+    background-color:#f6d4d291;
+    border: $bordes;
+    color: map-get($colores, textos);
+    font-weight: bold;
+    &-primary:hover{
+        background-color: map-get($colores, secundario);
+        border: $bordes;
+        color: map-get($colores, encabezados)
+    }
+}
+
+
+
+@media only screen and (min-width: 768px){
+    #contacto{
+        @include flex (row, space-evenly)
+    }
+}

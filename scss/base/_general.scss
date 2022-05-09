@@ -7,27 +7,23 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: $secundario;
+    background-color: map-get($colores, secundario);
     a{
         text-decoration: none;
-        color: $textos;
+        color: map-get($colores, textos);
         &:hover{
-            color: $textos;
+            color: map-get($colores, textos);
         }
     }
-    h1,h2,h3,h4,h5,h6{
-        font-family: $titulos;
-        font-weight: 600;
-        color: $encabezados;
-        text-shadow: $sombreado-texto;
-    }
+    
     h1 {
+        @extend %encabezados;
         margin-top: 15px;
         text-align: center;
     }
     main{
-        font-family: $cuerpo;
-        color: $textos;
+        font-family: map-get($tipografias, cuerpo);
+        color: map-get($colores, textos);
         min-height: 100vh;
         margin: auto;
         margin-bottom: 15px;

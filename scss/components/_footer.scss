@@ -1,22 +1,20 @@
 .footer{
     height: 75px;
     width: 100%;
-    background-image: linear-gradient($secundario, $principal);
+    background-image: map-get($colores, gradiente);
     &__lista{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        @include flex(column, space-evenly);
         height: 75px;
         margin-left: 15px;
         padding: 0;
-        font-family: $titulos;
+        font-family: map-get($tipografias, titulos);
         list-style: none;
         li{
             padding: 0.15%;
             transition: all 0.5s;
             &:hover{
                 margin-left: 15px;
-                color: $textos;
+                color: map-get($colores, textos);
             }
         }
     }
