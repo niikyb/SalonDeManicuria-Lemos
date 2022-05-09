@@ -33,7 +33,7 @@
 }
 .btn{
     margin-left: 10px;
-    background-color:#f6d4d291;
+    background-color:#f6d4d2a0;
     border: $bordes;
     color: map-get($colores, textos);
     font-weight: bold;
@@ -43,8 +43,6 @@
         color: map-get($colores, encabezados)
     }
 }
-
-
 
 @media only screen and (min-width: 768px){
     #contacto{

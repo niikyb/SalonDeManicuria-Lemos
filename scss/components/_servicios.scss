@@ -11,8 +11,9 @@
         p{
             margin-top: 15px;
         }
-        h3{
-            @extend %encabezados
+        h2{
+            @extend %encabezados;
+            font-size: calc(1.3rem + .6vw);
         }
     };     
     span{

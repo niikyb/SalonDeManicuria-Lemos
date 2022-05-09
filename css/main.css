@@ -1,4 +1,4 @@
-body h1, .destacado__txt h3, .nosotros h2, .michis__ttl, .card-body h4, .servicios__desc h3, .carrusel__ttl {
+body h1, .destacado__txt h2, .nosotros h2, .michis__ttl, .card-body h3, .servicios__desc h2, .carrusel__ttl {
   font-family: "Varela Round", sans-serif;
   font-weight: 600;
   color: #151515;
@@ -121,6 +121,8 @@ body {
     border-radius: 1%; }
   .destacado__txt {
     margin-top: 10px; }
+    .destacado__txt h2 {
+      font-size: calc(1.3rem + .6vw); }
 
 @media only screen and (min-width: 768px) {
   .destacado {
@@ -175,13 +177,15 @@ body {
 
 .michis__img {
   box-shadow: 2px 2px 2px 1px #22222229;
-  border-radius: 50%; }
+  border-radius: 50%;
+  margin-bottom: -5px; }
 
 .card {
   background-color: transparent;
   border: none;
   text-align: center; }
-  .card-body h4 {
+  .card-body h3 {
+    font-size: calc(1.275rem + .3vw);
     margin-bottom: 0; }
 
 @media only screen and (min-width: 768px) {
@@ -201,6 +205,8 @@ body {
     border-radius: 1%; }
   .servicios__desc p {
     margin-top: 15px; }
+  .servicios__desc h2 {
+    font-size: calc(1.3rem + .6vw); }
   .servicios span {
     font-size: 18px;
     font-weight: bold; }
@@ -275,7 +281,7 @@ body {
 
 .btn {
   margin-left: 10px;
-  background-color: #f6d4d291;
+  background-color: #f6d4d2a0;
   border: solid 1px #222222;
   color: #222222;
   font-weight: bold; }

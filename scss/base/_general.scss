@@ -15,7 +15,6 @@ body{
             color: map-get($colores, textos);
         }
     }
-    
     h1 {
         @extend %encabezados;
         margin-top: 15px;

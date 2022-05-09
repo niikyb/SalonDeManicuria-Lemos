@@ -6,8 +6,9 @@
     }
     &__txt{
         margin-top: 10px;
-        h3{
-            @extend %encabezados
+        h2{
+            @extend %encabezados;
+            font-size: calc(1.3rem + .6vw);
         }
     }
 };

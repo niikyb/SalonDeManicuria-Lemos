@@ -12,7 +12,7 @@ $tipografias:(
     );
 
 $sombreado-texto: 2px 2px #22222229;
-$bordes: solid 1px #222222;
+$bordes: solid 1px map-get($colores, textos);
 
 @mixin img ($radio){
     box-shadow: 2px 2px 2px 1px #22222229;;

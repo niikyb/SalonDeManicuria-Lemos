@@ -23,15 +23,17 @@
         text-align: center;
     };
     &__img{
-        @include img (50%)
+        @include img (50%);
+        margin-bottom: -5px;
     }
 }
 .card{
     background-color: transparent;
     border: none;
     text-align: center;
-    &-body h4{
+    &-body h3{
         @extend %encabezados;
+        font-size: calc(1.275rem + .3vw);
         margin-bottom: 0;
     }
 }
