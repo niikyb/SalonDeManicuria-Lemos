@@ -1,0 +1,11 @@
+.notFound{
+    align-items: center;
+    height: 75vh;
+    &__img{
+        width: 50%
+    };
+    &__txt{
+        font-size: map-get($sizes, enc1);
+        font-weight: 700;
+    }
+}

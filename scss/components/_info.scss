@@ -33,7 +33,7 @@
     text-align: center;
     &-body h3{
         @extend %encabezados;
-        font-size: calc(1.275rem + .3vw);
+        font-size: map-get($sizes, enc2);
         margin-bottom: 0;
     }
 }

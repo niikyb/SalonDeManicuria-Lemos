@@ -295,3 +295,12 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly; } }
+
+.notFound {
+  align-items: center;
+  height: 75vh; }
+  .notFound__img {
+    width: 50%; }
+  .notFound__txt {
+    font-size: calc(1.3rem + .6vw);
+    font-weight: 700; }

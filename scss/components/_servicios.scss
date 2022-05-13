@@ -13,7 +13,7 @@
         }
         h2{
             @extend %encabezados;
-            font-size: calc(1.3rem + .6vw);
+            font-size: map-get($sizes, enc1);
         }
     };     
     span{
