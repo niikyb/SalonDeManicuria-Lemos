@@ -5,7 +5,12 @@
     }
     &__card{
         margin: 10px 0;
-    }
+        a{
+            &::after{
+                content: "»"
+            }
+        }
+    };
     &__img{
         width: 125px;
         margin-right: 10px;

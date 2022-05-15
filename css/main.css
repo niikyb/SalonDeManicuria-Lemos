@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body h1, .destacado__txt h2, .nosotros h2, .michis__ttl, .card-body h3, .servicios__desc h2, .carrusel__ttl {
   font-family: "Varela Round", sans-serif;
   font-weight: 600;
@@ -123,6 +124,8 @@ body {
     margin-top: 10px; }
     .destacado__txt h2 {
       font-size: calc(1.3rem + .6vw); }
+    .destacado__txt a::after {
+      content: "»"; }
 
 @media only screen and (min-width: 768px) {
   .destacado {
@@ -159,6 +162,8 @@ body {
   justify-content: flex-start; }
   .nosotros__card {
     margin: 10px 0; }
+    .nosotros__card a::after {
+      content: "»"; }
   .nosotros__img {
     width: 125px;
     margin-right: 10px;
@@ -297,10 +302,35 @@ body {
     justify-content: space-evenly; } }
 
 .notFound {
-  align-items: center;
-  height: 75vh; }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: auto; }
   .notFound__img {
-    width: 50%; }
+    width: 75%;
+    margin: auto; }
   .notFound__txt {
-    font-size: calc(1.3rem + .6vw);
-    font-weight: 700; }
+    font-size: calc(1.1rem + .3vw);
+    font-weight: 700;
+    text-align: center; }
+    .notFound__txt p {
+      margin-bottom: 0; }
+    .notFound__txt .botones {
+      margin-top: 5px; }
+      .notFound__txt .botones .btn-primary {
+        background-color: #4cdde9; }
+        .notFound__txt .botones .btn-primary:hover {
+          padding-left: 15px;
+          background-color: #f6d4d2a0; }
+
+@media only screen and (min-width: 768px) {
+  .notFound {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 75vh; }
+    .notFound__img {
+      width: 50%; }
+    .notFound__txt {
+      text-align: left; } }

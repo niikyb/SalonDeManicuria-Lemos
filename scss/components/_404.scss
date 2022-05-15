@@ -1,11 +1,40 @@
 .notFound{
-    align-items: center;
-    height: 75vh;
+    @include flex (column, flex-start);
+    margin: auto;
     &__img{
-        width: 50%
+        width: 75%;
+        margin: auto;
     };
     &__txt{
-        font-size: map-get($sizes, enc1);
+        font-size: map-get($sizes, enc3);
         font-weight: 700;
+        text-align: center;
+        p{
+            margin-bottom: 0;
+        }
+        .botones{
+            margin-top: 5px;
+            .btn-primary{
+                background-color: map-get($colores, principal);
+                    &:hover{
+                        padding-left: 15px;
+                        background-color:#f6d4d2a0;
+                    }
+            }
+        }
+    }
+}    
+
+@media only screen and (min-width: 768px){
+    .notFound{
+        @include flex (row, space-evenly);
+        align-items: center;
+        height: 75vh;
+        &__img{
+            width: 50%;
+        };
+        &__txt{
+            text-align: left;
+        }
     }
 }
