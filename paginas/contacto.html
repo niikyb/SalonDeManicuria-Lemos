@@ -58,22 +58,22 @@
                     </div>
                 </article>
                 <article class="col-md-6 form">
-                    <form>
+                    <form name="contacto" data-netlify="true" method="POST" >
                         <h1>Contacto</h1>
                         <div class="mb-3 form-floating form__input">
-                            <input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellido">
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre y Apellido">
                             <label for="nombre">Nombre y Apellido</label>
                         </div>
                         <div class="mb-3 form-floating form__input">
-                            <input type="text" class="form-control" id="tel" placeholder="Número de Teléfono">
+                            <input type="text" class="form-control" id="tel" name="tel" placeholder="Número de Teléfono">
                             <label for="tel">Número de Teléfono</label>
                         </div>
                         <div class="mb-3 form-floating form__input">
-                            <input type="date" class="form-control" id="fecha">
+                            <input type="date" class="form-control" id="fecha" name="fecha">
                             <label for="fecha">Fecha</label>
                         </div>
                         <div class="mb-3 form-floating form__input">
-                            <select class="form-select" id="turno">
+                            <select class="form-select" id="turno" name="turno">
                                 <option value="ma">Mañana (10hs)</option>
                                 <option value="ta">Tarde (15hs)</option>
                             </select>
@@ -97,7 +97,7 @@
                             </div>
                         </div>
                         <div class="mb-3 form-floating form__input">
-                            <textarea class="form-control" placeholder="Dejanos un mensaje" id="msj" style="height: 150px"></textarea>
+                            <textarea class="form-control" placeholder="Dejanos un mensaje" id="msj" name="msj" style="height: 150px"></textarea>
                             <label for="msj">Dejanos un mensaje</label>
                         </div>
                         <button type="submit" class="btn btn-primary">Enviar</button>
