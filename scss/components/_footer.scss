@@ -1,5 +1,5 @@
 .footer{
-    height: 75px;
+    height: 131px;
     width: 100%;
     background-image: map-get($colores, gradiente);
     &__lista{
@@ -18,13 +18,29 @@
             }
         }
     }
+    &__credits{
+        text-align: center;
+        font-size: 14px;
+    }
 }
 
 @media only screen and (min-width: 768px){
     .footer{
-        height: 115px;
         &__lista{
             height: 115px;
+        }
+        &__credits{
+            text-align: right;
+            align-self: flex-end;
+            span{
+                font-weight: 500;
+                a{
+                    transition: all 0.2s;
+                    &:hover{
+                        font-size: 16px;
+                    }
+                }
+            }
         }
     }
 }

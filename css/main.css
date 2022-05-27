@@ -89,7 +89,7 @@ body {
         background-color: #f6d4d2; } }
 
 .footer {
-  height: 75px;
+  height: 131px;
   width: 100%;
   background-image: linear-gradient(#f6d4d2, #4cdde9); }
   .footer__lista {
@@ -107,12 +107,22 @@ body {
       .footer__lista li:hover {
         margin-left: 15px;
         color: #222222; }
+  .footer__credits {
+    text-align: center;
+    font-size: 14px; }
 
 @media only screen and (min-width: 768px) {
-  .footer {
+  .footer__lista {
     height: 115px; }
-    .footer__lista {
-      height: 115px; } }
+  .footer__credits {
+    text-align: right;
+    align-self: flex-end; }
+    .footer__credits span {
+      font-weight: 500; }
+      .footer__credits span a {
+        transition: all 0.2s; }
+        .footer__credits span a:hover {
+          font-size: 16px; } }
 
 .destacado {
   margin: auto;
