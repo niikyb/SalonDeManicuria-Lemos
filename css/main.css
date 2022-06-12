@@ -14,7 +14,8 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  background-color: #f6d4d2; }
+  background-color: #f6d4d2;
+  min-height: 100vh; }
   body a {
     text-decoration: none;
     color: #222222; }
@@ -26,7 +27,6 @@ body {
   body main {
     font-family: "Comfortaa", sans-serif;
     color: #222222;
-    min-height: 100vh;
     margin: auto;
     margin-bottom: 15px; }
     body main a:hover {

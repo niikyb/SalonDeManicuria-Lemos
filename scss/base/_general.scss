@@ -8,6 +8,7 @@ html{
 }
 body{
     background-color: map-get($colores, secundario);
+    min-height: 100vh;
     a{
         text-decoration: none;
         color: map-get($colores, textos);
@@ -23,7 +24,6 @@ body{
     main{
         font-family: map-get($tipografias, cuerpo);
         color: map-get($colores, textos);
-        min-height: 100vh;
         margin: auto;
         margin-bottom: 15px;
         a:hover{
